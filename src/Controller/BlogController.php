@@ -7,6 +7,11 @@ use App\Entity;
 
 class BlogController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
 {
+    public function index(){
+        return new \Symfony\Component\HttpFoundation\Response(
+            '<html><body>Lucky number:  </body></html>'
+        );
+    }
     /**
      * @Route("/blog/{page}", name="blog_list", requirements={"page"="\d+"})
      */

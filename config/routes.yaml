@@ -8,3 +8,6 @@ legacy_doc:
     # this value can be an absolute path or an absolute URL
     path: 'https://legacy.example.com/doc'
     permanent: true
+blog_index:
+  path:       /
+  controller: App\Controller\BlogController::index
