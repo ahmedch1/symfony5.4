@@ -8,9 +8,7 @@ use App\Entity;
 class BlogController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
 {
     public function index(){
-        return new \Symfony\Component\HttpFoundation\Response(
-            '<html><body>Lucky number:  </body></html>'
-        );
+        return $this->render('index.html.twig');
     }
     /**
      * @Route("/blog/{page}", name="blog_list", requirements={"page"="\d+"})

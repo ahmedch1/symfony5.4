@@ -13,9 +13,10 @@ class LuckyController extends AbstractController
 public function number(int $max): Response
 {
 $number = random_int(0, $max);
-
-    return new Response(
-        '<html><body>Lucky number: ' . $number .'</body></html>'
-    );
+//
+//    return new Response(
+//        '<html><body>Lucky number: ' . $number .'</body></html>'
+//    );
+    return $this->render('lucky/number.html.twig',['number'=>$number]);
 }
 }

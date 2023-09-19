@@ -1,0 +1,7 @@
+{{ include('user/_user_profile.html.twig') }}
+{# the image lives at "public/images/logo.png" #}
+<img src="{{ asset('images/logo.jpg') }}" alt="Symfony!" width="150px"/>
+{{ app.environment }}
+{{ app.debug }}
+{{ app.token }}
+{{ ga_tracking }}
